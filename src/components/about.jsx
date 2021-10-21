@@ -1,7 +1,7 @@
 function Home() {
-  // const sendMail = () => {
-  //   window.location.href = "mailto:b.bhaskar.nair@gmail.com";
-  // }
+  const sendMail = () => {
+    window.open("mailto:b.bhaskar.nair@gmail.com", '_blank', 'location=yes').focus()
+  }
 
   return (
     <section id="about-section" className="main-section">
@@ -22,7 +22,7 @@ function Home() {
         <span className="text-primary">VueJS, NuxtJS</span> with <span className="text-primary">TailwindCSS</span>
       </p>
       {/* Todo Replace this with something else */}
-      <button className="base-button w-60">
+      <button onClick={sendMail} className="base-button w-60">
         Get in Touch
       </button>
       {/* <div className='bottom-border'></div> */}

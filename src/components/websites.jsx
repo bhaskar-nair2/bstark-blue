@@ -4,7 +4,7 @@ function Links() {
   const websites = [
     {
       sitename: "Websort",
-      link: "https://www.tabeazy.com",
+      link: "https://websort.bstark.tech",
       stack: ["vanillajs", "bulma", "websql"]
     },
     {

@@ -2,7 +2,9 @@ import React from 'react'
 import Navigation from './components/navigation.jsx'
 import Socials from './components/socials.jsx'
 import About from './components/about.jsx'
-import Links from './components/links.jsx'
+import Websites from './components/websites.jsx'
+import Articles from './components/articles.jsx'
+
 import './App.css'
 
 class App extends React.Component {
@@ -111,13 +113,22 @@ class App extends React.Component {
     }, 400);
   }
 
+  setActiveSection = (index) => {
+    const validIndex = index < this.state.offsets.length ? index : 0;
+    this.setState({ activeSection: validIndex })
+  }
+
   render() {
     return (
       <div className="App" >
-        <Navigation></Navigation>
+        <Navigation
+          activeSection={this.state.activeSection}
+          setActiveSection={this.setActiveSection}
+        />
         <Socials></Socials>
         <About></About>
-        <Links></Links>
+        <Websites></Websites>
+        <Articles></Articles>
         <section className="main-section">Contact</section>
         <section className="main-section">Footer</section>
       </div>

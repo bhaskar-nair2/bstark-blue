@@ -1,4 +1,4 @@
-import './links.css'
+import './websites.css'
 
 function Links() {
   const websites = [
@@ -19,19 +19,6 @@ function Links() {
     },
   ]
 
-  const articles = [
-    {
-      title: "Flutter User Presence using Firebase-Cloud Firestore",
-      site: 'medium.com',
-      link: "https://medium.com/@b.bhaskar.nair/flutter-user-presence-using-firebase-cloud-firestore-f79f590eb64f",
-    },
-    {
-      title: "PWA Add to Homescreen button",
-      site: 'dev.to',
-      link: "https://dev.to/bhaskarnair2/how-to-add-an-add-to-homescreen-button-in-your-pwa-na",
-    }
-  ]
-
   const arrayToString = (arr = []) => {
     return arr.reduce((tot, cur, index) => (tot += `${cur} `), "");
   }
@@ -45,38 +32,17 @@ function Links() {
     ></LinkCard>
   )
 
-  const ArticleList = articles.map((art, index) =>
-    <LinkCard
-      key={index}
-      title={art.title}
-      subtitle={art.site}
-      link={art.link}
-    ></LinkCard>
-  )
 
   return (
-    <section id="links-section" className="main-section">
+    <section id="websites-section" className="main-section">
       <div className="mb-12">
-        <a href="#" className="text-accent mb-6">#links</a>
+        <h2 className="text-accent mb-6 underline">#websites</h2>
       </div>
       <div className="mb-12">
-        <h2 className="text-accent mb-6">websites</h2>
         <div className="card-holder">
           {SiteList}
         </div>
       </div>
-      <div className="mb-12">
-        <h2 className="text-accent mb-6">articles</h2>
-        <div className="card-holder">
-          {ArticleList}
-        </div>
-      </div>
-      {/* <div className="mb-12 hidden lg:block">
-        <h2 className="text-accent mb-6">miscellaneous</h2>
-        <div className="card-holder">
-          <LinkCard></LinkCard>
-        </div>
-      </div > */}
     </section >
   )
 }

@@ -9,7 +9,7 @@ function Home() {
         <span className="text-primary">Bhaskar Nair</span>
       </h1>
       <p className="w-96 mb-12">
-        I am a <span className="text-primary">Frontend Architect</span> with experience in ECommerce, Ed-Tech and
+        I am a <span className="text-primary">Frontend Architect</span> with experience in ECommerce and
         Transport. I like working with early stage startups to bring their
         ideas to life.
       </p>

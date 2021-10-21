@@ -7,16 +7,16 @@ library.add(faGithub, faStackOverflow, faTwitter, faInstagram);
 
 function Socials(params) {
   const links = [
-    { icon: 'github', link: '#' },
-    { icon: 'stack-overflow', link: '#' },
-    { icon: 'twitter', link: '#' },
-    { icon: 'instagram', link: '#' },
+    { icon: 'github', link: 'https://github.com/bhaskar-nair2/' },
+    { icon: 'stack-overflow', link: 'https://stackoverflow.com/users/4347232/bhaskar' },
+    { icon: 'twitter', link: 'https://twitter.com/bas_kar_na_yar' },
+    { icon: 'instagram', link: 'https://www.instagram.com/bas_kar_na_yar/' },
   ]
 
   const icons = links.map((link, index) =>
     <li key={index}>
-      <a href={link.link}>
-        <FontAwesomeIcon icon={["fab", link.icon]} size="2x" />
+      <a target="_blank" href={link.link}>
+        <FontAwesomeIcon icon={["fab", link.icon]} size="lg" />
       </a>
     </li>
   )

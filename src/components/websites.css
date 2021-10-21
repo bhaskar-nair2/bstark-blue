@@ -5,6 +5,7 @@
 .link-card{
   @apply no-underline box-border rounded-sm bg-accent ;
   @apply border-background border-2 hover:border-primary;
+  touch-action: none;
 }
 
 .link-card-card{

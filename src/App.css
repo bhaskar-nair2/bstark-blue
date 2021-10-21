@@ -6,9 +6,12 @@
   @apply text-base;
 }
 
+/* https://stackoverflow.com/questions/16348031/disable-scrolling-when-touch-moving-certain-element */
+
 .base-button {
   @apply  rounded-sm bg-accent font-black h-12 text-sm;
   @apply border-background border-2 hover:border-primary;
+  touch-action: none;
 }
 
 .bottom-border{

@@ -35,8 +35,11 @@ class App extends React.Component {
       passive: false
     }); // Other browsers
 
+    window.addEventListener("mousedown", this.clicked, { passive: false }); // mobile devices
     window.addEventListener("touchstart", this.touchStart, { passive: false }); // mobile devices
     window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
+
+    window.scrollBy(0, 1);
   }
 
   calculateSectionOffsets = async () => {
@@ -61,7 +64,13 @@ class App extends React.Component {
   }
 
   touchStart = (e) => {
-    e.preventDefault();
+    // Prevent buttons from ignoring when clicked 
+    const ignoreHIt = ['A', 'BUTTON']
+    const hitElement = e.path.map(e => e.nodeName)
+    const ignore = ignoreHIt.some(r => hitElement?.includes(r))
+    if (!ignore)
+      e.preventDefault();
+
     this.setState({
       touchStartY: e.touches[0].clientY
     })
@@ -82,6 +91,10 @@ class App extends React.Component {
       touchStartY: 0
     })
     return false;
+  }
+
+  clicked = (e) => {
+    console.log(e);
   }
 
   moveDown = () => {

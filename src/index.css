@@ -9,7 +9,7 @@ html{
 }
 body {
   font-family: Inter;
-  @apply bg-background text-text font-black px-5 md:px-14 lg:px-20;
+  @apply bg-background text-text font-black;
 }
 a{
   @apply text-primary underline;

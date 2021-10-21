@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './components/navigation.jsx'
-import Home from './components/home.jsx'
+import About from './components/about.jsx'
 import Links from './components/links.jsx'
 import './App.css'
 
@@ -28,6 +28,9 @@ class App extends React.Component {
     window.addEventListener("mousewheel", this.handleMouseWheel, {
       passive: false
     }); // Other browsers
+
+    window.addEventListener("touchstart", this.touchStart, { passive: false }); // mobile devices
+    window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
   }
 
   calculateSectionOffsets = async () => {
@@ -48,6 +51,30 @@ class App extends React.Component {
       this.moveDown();
     }
     e.preventDefault();
+    return false;
+  }
+
+  touchStart = (e) => {
+    e.preventDefault();
+    this.setState({
+      touchStartY: e.touches[0].clientY
+    })
+  }
+
+  touchMove = (e) => {
+    if (this.state.inMove) return false;
+    e.preventDefault();
+
+    const currentY = e.touches[0].clientY;
+
+    if (this.state.touchStartY < currentY) {
+      this.moveDown();
+    } else {
+      this.moveUp();
+    }
+    this.setState({
+      touchStartY: 0
+    })
     return false;
   }
 
@@ -87,7 +114,7 @@ class App extends React.Component {
     return (
       <div className="App" >
         <Navigation></Navigation>
-        <Home></Home>
+        <About></About>
         <Links></Links>
         <section className="main-section">Contact</section>
         <section className="main-section">Footer</section>

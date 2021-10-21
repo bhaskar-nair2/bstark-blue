@@ -1,0 +1,14 @@
+.header {
+  @apply fixed top-0 left-0 w-full h-20 bg-background;
+  @apply flex justify-between items-center;
+  @apply px-5 md:px-14 lg:px-20;
+}
+#site-name{
+  @apply text-text no-underline text-lg lg:text-lg !important;
+}
+.nav{
+  @apply hidden lg:block;
+}
+.nav-link{
+  @apply text-base ml-12;
+}

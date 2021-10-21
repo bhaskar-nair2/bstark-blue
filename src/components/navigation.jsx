@@ -21,7 +21,7 @@ function Navigation(props) {
   return (
     <header className="header">
       <strong>
-        <a id="site-name" to="/">bstark.tech</a>
+        <a id="site-name" href="#about-section">bstark.tech</a>
       </strong>
       <nav className="nav">
         {linkList}

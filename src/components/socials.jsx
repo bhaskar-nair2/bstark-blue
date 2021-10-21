@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub, faStackOverflow, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import './socials.css'
+import { Link } from 'react-router-dom';
 
 library.add(faGithub, faStackOverflow, faTwitter, faInstagram);
 
@@ -16,6 +17,7 @@ function Socials(params) {
   const icons = links.map((link, index) =>
     <li key={index}>
       <a target="_blank" href={link.link}>
+        <span className="hidden">{link.icon}</span>
         <FontAwesomeIcon icon={["fab", link.icon]} size="lg" />
       </a>
     </li>

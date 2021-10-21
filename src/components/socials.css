@@ -1,5 +1,5 @@
 .social-bar{
-  @apply fixed right-0 bottom-1/2 -mb-20;
+  @apply fixed right-0 bottom-1/2 -mb-20 z-30;
   @apply md:mr-14 lg:mr-52 xl:mr-80;
   @apply bg-accent p-2 h-44 w-11 rounded-l-xl;
   @apply flex-col justify-between items-center;
@@ -7,5 +7,5 @@
 }
 
 .social-bar li a {
-  @apply text-text;
+  @apply relative z-20 text-text;
 }

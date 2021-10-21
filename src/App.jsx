@@ -5,6 +5,8 @@ import About from './components/about.jsx'
 import Websites from './components/websites.jsx'
 import Articles from './components/articles.jsx'
 
+import DocumentMeta from 'react-document-meta';
+
 import './App.css'
 
 class App extends React.Component {
@@ -119,8 +121,21 @@ class App extends React.Component {
   }
 
   render() {
+    const meta = {
+      title: 'BStark Blue',
+      description: 'Bhaskar Nair\'s personal website',
+      canonical: 'http://bstark.tech',
+      meta: {
+        charset: 'utf-8',
+        name: {
+          keywords: 'bhaskar,nair,developer,india,front end'
+        }
+      }
+    };
+
     return (
       <div className="App" >
+        <DocumentMeta {...meta} />
         <Navigation
           activeSection={this.state.activeSection}
           setActiveSection={this.setActiveSection}

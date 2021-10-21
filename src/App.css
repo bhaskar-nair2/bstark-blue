@@ -3,15 +3,12 @@
   @apply px-5 md:px-14 lg:px-52 xl:px-80;
   @apply py-14 lg:py-20;
   @apply flex flex-col justify-center;
-}
-
-.base-wrapper {
-  @apply h-full pb-10;
-  @apply flex flex-col justify-center text-base;
+  @apply text-base;
 }
 
 .base-button {
-  @apply bg-accent font-black h-12 text-sm;
+  @apply  rounded-sm bg-accent font-black h-12 text-sm;
+  @apply border-background border-2 hover:border-primary;
 }
 
 .bottom-border{

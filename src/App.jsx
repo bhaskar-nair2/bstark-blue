@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from './components/navigation.jsx'
+import Socials from './components/socials.jsx'
 import About from './components/about.jsx'
 import Links from './components/links.jsx'
 import './App.css'
@@ -114,6 +115,7 @@ class App extends React.Component {
     return (
       <div className="App" >
         <Navigation></Navigation>
+        <Socials></Socials>
         <About></About>
         <Links></Links>
         <section className="main-section">Contact</section>

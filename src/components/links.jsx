@@ -11,7 +11,12 @@ function Links() {
       sitename: "TabEazy Seller Portal",
       link: "https://seller.tabeazy.com",
       stack: ["nuxtjs", "vuetify"]
-    }
+    },
+    {
+      sitename: "Stats2Econo",
+      link: "https://www.stats2econo.com",
+      stack: ["wix"]
+    },
   ]
 
   const articles = [
@@ -51,29 +56,27 @@ function Links() {
 
   return (
     <section id="links-section" className="main-section">
-      <div className="base-wrapper">
-        <div className="mb-12">
-          <a href="#" className="text-accent mb-6">#links</a>
+      <div className="mb-12">
+        <a href="#" className="text-accent mb-6">#links</a>
+      </div>
+      <div className="mb-12">
+        <h2 className="text-accent mb-6">websites</h2>
+        <div className="card-holder">
+          {SiteList}
         </div>
-        <div className="mb-12">
-          <h2 className="text-accent mb-6">websites</h2>
-          <div className="card-holder">
-            {SiteList}
-          </div>
+      </div>
+      <div className="mb-12">
+        <h2 className="text-accent mb-6">articles</h2>
+        <div className="card-holder">
+          {ArticleList}
         </div>
-        <div className="mb-12">
-          <h2 className="text-accent mb-6">articles</h2>
-          <div className="card-holder">
-            {ArticleList}
-          </div>
+      </div>
+      {/* <div className="mb-12 hidden lg:block">
+        <h2 className="text-accent mb-6">miscellaneous</h2>
+        <div className="card-holder">
+          <LinkCard></LinkCard>
         </div>
-        <div className="mb-12 hidden lg:block">
-          <h2 className="text-accent mb-6">miscellaneous</h2>
-          <div className="card-holder">
-            <LinkCard></LinkCard>
-          </div>
-        </div >
-      </div >
+      </div > */}
     </section >
   )
 }

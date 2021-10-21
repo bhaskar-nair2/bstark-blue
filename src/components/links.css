@@ -1,15 +1,15 @@
 .card-holder {
-  @apply inline-grid gap-5 lg:gap-10 grid-cols-2 lg:grid-cols-3;
+  @apply inline-grid gap-5 lg:gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
 }
 
 .link-card{
-  @apply no-underline;
-  @apply border-background border hover:border-primary;
+  @apply no-underline box-border rounded-sm bg-accent ;
+  @apply border-background border-2 hover:border-primary;
 }
 
 .link-card-card{
-  @apply bg-accent flex flex-col justify-between h-32 p-3;
-  @apply w-48 lg:w-52 xl:w-72;
+  @apply flex flex-col justify-between h-32 p-3;
+  @apply w-full;
 }
 
 .base-wrapper{

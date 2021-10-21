@@ -1,7 +1,7 @@
 .header {
-  @apply fixed top-0 left-0 w-full h-14 lg:h-20 bg-background;
+  @apply fixed top-0 left-0 z-10 w-full h-14 lg:h-20 bg-background;
   @apply flex justify-between items-center;
-  @apply px-5 md:px-14 lg:px-20;
+  @apply px-5 md:px-14 lg:px-52 xl:px-80;
 }
 #site-name{
   @apply text-text no-underline text-base lg:text-lg !important;

@@ -17,10 +17,11 @@ function Home() {
         My primary stack is <br />
         <span className="text-primary">VueJS, NuxtJS</span> with <span className="text-primary">TailwindCSS</span>
       </p>
+      {/* Todo Replace this with something else */}
       <button className="base-button w-60">
         Get in Touch
       </button>
-      <div className='bottom-border'></div>
+      {/* <div className='bottom-border'></div> */}
     </section>
   )
 }

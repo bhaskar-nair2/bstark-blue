@@ -1,0 +1,17 @@
+.card-holder {
+  @apply inline-grid gap-5 lg:gap-10 grid-cols-2 lg:grid-cols-3;
+}
+
+.link-card{
+  @apply no-underline;
+  @apply border-background border hover:border-primary;
+}
+
+.link-card-card{
+  @apply bg-accent flex flex-col justify-between h-32 p-3;
+  @apply w-48 lg:w-52 xl:w-72;
+}
+
+.base-wrapper{
+  @apply flex flex-col justify-between;
+}

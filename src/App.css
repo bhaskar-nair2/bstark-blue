@@ -1,10 +1,14 @@
 .main-section {
-  @apply h-screen pb-10 md:pb-14 lg:pb-20;
+  @apply h-screen;
+  @apply my-14 lg:my-20;
 }
+
 .base-wrapper {
-  @apply border-b-2 border-accent h-full;
+  @apply h-full pb-10;
   @apply flex flex-col justify-center text-base;
+  @apply border-b-2 border-accent
 }
+
 .base-button {
   @apply bg-accent font-black h-12 text-sm;
 }

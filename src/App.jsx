@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from './components/navigation.jsx'
 import Home from './components/home.jsx'
+import Links from './components/links.jsx'
 import './App.css'
 
 class App extends React.Component {
@@ -87,7 +88,7 @@ class App extends React.Component {
       <div className="App" >
         <Navigation></Navigation>
         <Home></Home>
-        <section className="main-section">Links</section>
+        <Links></Links>
         <section className="main-section">Contact</section>
         <section className="main-section">Footer</section>
       </div>

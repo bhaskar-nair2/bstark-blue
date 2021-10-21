@@ -1,8 +1,12 @@
 function Home() {
+  // const sendMail = () => {
+  //   window.location.href = "mailto:b.bhaskar.nair@gmail.com";
+  // }
+
   return (
     <section id="about-section" className="main-section">
       <div className="mb-12">
-        <a href="#" className="text-accent">#about</a>
+        <h2 className="text-accent">#about</h2>
       </div>
       <h1 className="text-xl xs:text-2xl lg:text-3xl mb-12">
         Hi, I am<br />

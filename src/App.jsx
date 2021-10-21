@@ -1,11 +1,12 @@
 import React from 'react'
+import DocumentMeta from 'react-document-meta';
+
 import Navigation from './components/navigation.jsx'
-import Socials from './components/socials.jsx'
+import { SocialsBar } from './components/socials.jsx'
 import About from './components/about.jsx'
 import Websites from './components/websites.jsx'
 import Articles from './components/articles.jsx'
-
-import DocumentMeta from 'react-document-meta';
+import Footer from './components/footer.jsx'
 
 import './App.css'
 
@@ -140,12 +141,14 @@ class App extends React.Component {
           activeSection={this.state.activeSection}
           setActiveSection={this.setActiveSection}
         />
-        <Socials></Socials>
+        <SocialsBar
+          totalSections={this.state.offsets.length}
+          activeSection={this.state.activeSection}
+        />
         <About></About>
         <Websites></Websites>
         <Articles></Articles>
-        <section className="main-section">Contact</section>
-        <section className="main-section">Footer</section>
+        <Footer></Footer>
       </div>
     )
   }

@@ -1,5 +1,5 @@
 .main-section {
-  @apply relative h-screen ;
+  @apply relative h-screen;
   @apply px-5 md:px-14 lg:px-52 xl:px-80;
   @apply py-14 lg:py-20;
   @apply flex flex-col justify-center;

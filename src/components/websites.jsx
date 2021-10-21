@@ -3,12 +3,17 @@ import './websites.css'
 function Links() {
   const websites = [
     {
+      sitename: "Websort",
+      link: "https://www.tabeazy.com",
+      stack: ["vanillajs", "bulma", "websql"]
+    },
+    {
       sitename: "TabEazy Store",
       link: "https://www.tabeazy.com",
       stack: ["nuxtjs", "tailwindcss"]
     },
     {
-      sitename: "TabEazy Seller Portal",
+      sitename: "TabEazy Seller",
       link: "https://seller.tabeazy.com",
       stack: ["nuxtjs", "vuetify"]
     },

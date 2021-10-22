@@ -9,7 +9,7 @@ import GA4React from "ga-4-react";
 const meta = {
   title: 'Bstark Blue | Bhaskar Nair',
   description: 'Bhaskar Nair, Frontend Architect, Full Stack Developer, Hyderabad, India',
-  canonical: 'http://bstark.tech',
+  canonical: 'https://www.bstark.tech',
   meta: {
     charset: 'utf-8',
     name: {

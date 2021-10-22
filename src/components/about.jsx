@@ -1,7 +1,22 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
+import './about.css'
+import { useState } from "react";
+
+library.add(faAnglesDown);
+
+
 function Home() {
+  let [showIcon, setIcon] = useState(false)
+
   const sendMail = () => {
     window.open("mailto:b.bhaskar.nair@gmail.com", '_blank', 'location=yes').focus()
   }
+
+  setTimeout(() => {
+    setIcon(true)
+  }, 5000);
 
   return (
     <section id="about-section" className="main-section">
@@ -24,6 +39,7 @@ function Home() {
       <button onClick={sendMail} className="base-button w-60">
         Get in Touch
       </button>
+      <FontAwesomeIcon className={`arrow-down ${showIcon == true ? '' : 'opacity-0'}`} icon={["fas", 'angles-down']} />
     </section>
   )
 }

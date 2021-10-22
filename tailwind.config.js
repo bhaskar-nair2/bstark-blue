@@ -9,7 +9,7 @@ module.exports = {
       accent: '#393E46',
     },
     fontSize: {
-      xs: ['10px', '12px'],
+      xs: ['12px', '12px'],
       sm: ['14px', '20px'],
       base: ['18px', '21.78px'],
       lg: ['24px', '28px'],
@@ -25,7 +25,11 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-    extend: {},
+    extend: {
+      animation: {
+        'bounce-slow': 'bounce 2s linear infinite',
+       }
+    },
   },
   variants: {
     extend: {},

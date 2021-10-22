@@ -8,7 +8,7 @@ function Home() {
       <div className="mb-12">
         <h2 className="text-accent">#about</h2>
       </div>
-      <h1 className="text-xl xs:text-2xl lg:text-3xl mb-12">
+      <h1 className="text-xl xs:text-2xl lg:text-2xl mb-12">
         Hi, I am<br />
         <span className="text-primary">Bhaskar Nair</span>
       </h1>

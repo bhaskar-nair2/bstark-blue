@@ -3,8 +3,9 @@
 }
 
 .link-card{
-  @apply no-underline box-border rounded-sm bg-accent ;
-  @apply border-background border-2 hover:border-primary;
+  @apply no-underline box-border rounded-sm bg-background ;
+  @apply border-4 border-accent shadow hover:shadow-2xl;
+  @apply transition-shadow duration-200;
   touch-action: none;
 }
 

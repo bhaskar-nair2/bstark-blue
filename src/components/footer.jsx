@@ -6,6 +6,7 @@ function Footer(params) {
 
   const stacks = [
     { type: 'Framework', name: 'ReactJS', link: 'https://reactjs.org' },
+    { type: 'Bundler', name: 'Vitejs', link: 'https://vitejs.dev/' },
     { type: 'Styling', name: 'TailwindCSS', link: 'https://tailwindcss.com/' },
     { type: 'Design', name: 'Figma', link: 'https://www.figma.com' },
     { type: 'Theme', name: 'Colorhunt', link: 'https://colorhunt.co/' },
@@ -35,10 +36,10 @@ function Footer(params) {
         <h2 className="text-accent">#stack</h2>
       </div>
       <div className="flex mb-24">
-        <ul className="mr-24">
+        <ul className="mr-24 space-y-2">
           {typeList}
         </ul>
-        <ul className="text-primary">
+        <ul className="text-primary space-y-2">
           {links}
         </ul>
       </div>

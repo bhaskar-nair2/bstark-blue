@@ -1,6 +1,6 @@
 .main-section {
   @apply relative h-screen;
-  @apply px-5 md:px-14 lg:px-52 xl:px-80;
+  @apply px-5 md:px-14 lg:px-52 xl:px-80 2xl:px-96;
   @apply py-14 lg:py-20;
   @apply flex flex-col justify-center;
   @apply text-base;
@@ -9,8 +9,9 @@
 /* https://stackoverflow.com/questions/16348031/disable-scrolling-when-touch-moving-certain-element */
 
 .base-button {
-  @apply  rounded-sm bg-accent font-black h-12 text-sm;
-  @apply border-background border-2 hover:border-primary;
+  @apply  rounded-sm  font-black h-12 text-sm;
+  @apply border-4 border-accent shadow hover:shadow-xl;
+  @apply transition-shadow duration-200;
   touch-action: none;
 }
 

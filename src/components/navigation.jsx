@@ -4,8 +4,8 @@ function Navigation(props) {
 
   const links = [
     { text: 'about', link: '#about-section' },
-    { text: 'websites', link: '#websites-section' },
-    { text: 'articles', link: '#articles-section' },
+    { text: 'projects', link: '#websites-section' },
+    { text: 'treatises', link: '#articles-section' },
   ]
 
   const linkList = links.map((link, index) =>

@@ -41,7 +41,7 @@ function Links() {
   return (
     <section id="websites-section" className="main-section">
       <div className="mb-12">
-        <h2 className="text-accent mb-6 underline">#websites</h2>
+        <h2 className="text-accent mb-6 underline">#projects</h2>
       </div>
       <div className="mb-12">
         <div className="card-holder">
@@ -52,7 +52,7 @@ function Links() {
   )
 }
 
-function LinkCard(props) {
+export function LinkCard(props) {
   return (
     <a className="link-card" href={props?.link} target="_blank">
       <div className="link-card-card">

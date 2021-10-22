@@ -1,4 +1,6 @@
 import './websites.css'
+import { LinkCard } from './websites';
+
 
 function Links() {
   const articles = [
@@ -26,7 +28,7 @@ function Links() {
   return (
     <section id="articles-section" className="main-section">
       <div className="mb-12">
-        <h2 className="text-accent mb-6 underline">#articles</h2>
+        <h2 className="text-accent mb-6 underline">#treatises</h2>
       </div>
       <div className="mb-12">
         <div className="card-holder">
@@ -34,21 +36,6 @@ function Links() {
         </div>
       </div>
     </section >
-  )
-}
-
-function LinkCard(props) {
-  return (
-    <a className="link-card" href={props?.link} target="_blank">
-      <div className="link-card-card">
-        <h3 className="text-text text-base line-clamp-3">
-          {props?.title}
-        </h3>
-        <p className="text-primary text-xs font-mono line-clamp-1">
-          {props?.subtitle}
-        </p>
-      </div>
-    </a>
   )
 }
 

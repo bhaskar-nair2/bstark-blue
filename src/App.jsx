@@ -1,5 +1,4 @@
 import React from 'react'
-import DocumentMeta from 'react-document-meta';
 
 import Navigation from './components/navigation.jsx'
 import { SocialsBar } from './components/socials.jsx'
@@ -135,21 +134,11 @@ class App extends React.Component {
   }
 
   render() {
-    const meta = {
-      title: 'BStark Blue',
-      description: 'Bhaskar Nair\'s personal website',
-      canonical: 'http://bstark.tech',
-      meta: {
-        charset: 'utf-8',
-        name: {
-          keywords: 'bhaskar,nair,developer,india,front end'
-        }
-      }
-    };
+
 
     return (
       <div className="App" >
-        <DocumentMeta {...meta} />
+
         <Navigation
           activeSection={this.state.activeSection}
           setActiveSection={this.setActiveSection}

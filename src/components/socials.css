@@ -13,5 +13,5 @@
 }
 
 .social-panel{
-  @apply inline-flex space-x-10;
+  @apply flex justify-between;
 }

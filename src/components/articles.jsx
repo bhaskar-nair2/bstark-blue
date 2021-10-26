@@ -1,6 +1,4 @@
-import './websites.css'
-import { LinkCard } from './websites';
-
+import './articles.css'
 
 function Links() {
   const articles = [
@@ -17,12 +15,12 @@ function Links() {
   ]
 
   const ArticleList = articles.map((art, index) =>
-    <LinkCard
+    <ArticleCard
       key={index}
       title={art.title}
       subtitle={art.site}
       link={art.link}
-    ></LinkCard>
+    ></ArticleCard>
   )
 
   return (
@@ -31,12 +29,30 @@ function Links() {
         <h2 className="text-accent mb-6 underline">#treatises</h2>
       </div>
       <div className="mb-12">
-        <div className="card-holder">
+        <div className="art-card-holder">
           {ArticleList}
         </div>
       </div>
     </section >
   )
 }
+
+
+
+function ArticleCard(props) {
+  return (
+    <a className="art-card" href={props?.link} target="_blank">
+      <div className="art-card-card">
+        <h3 className="text-text text-base line-clamp-3">
+          {props?.title}
+        </h3>
+        <p className="text-primary text-xs font-mono line-clamp-1">
+          {props?.subtitle}
+        </p>
+      </div>
+    </a>
+  )
+}
+
 
 export default Links;

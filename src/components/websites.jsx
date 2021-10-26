@@ -52,7 +52,7 @@ function Links() {
   )
 }
 
-export function LinkCard(props) {
+function LinkCard(props) {
   return (
     <a className="link-card" href={props?.link} target="_blank">
       <div className="link-card-card">

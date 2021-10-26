@@ -1,0 +1,20 @@
+.art-card-holder {
+  @apply inline-grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3;
+  @apply gap-5 lg:gap-10;
+}
+
+.art-card{
+  @apply no-underline box-border rounded-sm bg-background ;
+  @apply border-4 border-accent shadow hover:shadow-2xl;
+  @apply transition-shadow duration-200;
+  touch-action: none;
+}
+
+.art-card-card{
+  @apply flex flex-col justify-between h-24 p-3;
+  @apply w-full;
+}
+
+.base-wrapper{
+  @apply flex flex-col justify-between;
+}

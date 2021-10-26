@@ -5,7 +5,7 @@ import './footer.css'
 function Footer(params) {
 
   const stacks = [
-    { type: 'Framework', name: 'ReactJS', link: 'https://reactjs.org' },
+    { type: 'Library', name: 'React', link: 'https://reactjs.org' },
     { type: 'Bundler', name: 'Vitejs', link: 'https://vitejs.dev/' },
     { type: 'Styling', name: 'TailwindCSS', link: 'https://tailwindcss.com/' },
     { type: 'Design', name: 'Figma', link: 'https://www.figma.com' },
@@ -33,7 +33,7 @@ function Footer(params) {
   return (
     <section className="main-section">
       <div className="mb-12">
-        <h2 className="text-accent">#stack</h2>
+        <h2 className="text-accent">#site-stack</h2>
       </div>
       <div className="flex mb-24">
         <ul className="mr-24 space-y-2">

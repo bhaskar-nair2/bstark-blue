@@ -1,5 +1,5 @@
 .arrow-down{
-  @apply absolute bottom-5 lg:bottom-10 right-1/2;
+  @apply absolute top-10 lg:top-32;
   @apply text-primary animate-bounce-slow;
   @apply transition-opacity duration-500;
 }

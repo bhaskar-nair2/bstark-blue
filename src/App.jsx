@@ -134,11 +134,8 @@ class App extends React.Component {
   }
 
   render() {
-
-
     return (
       <div className="App" >
-
         <Navigation
           activeSection={this.state.activeSection}
           setActiveSection={this.setActiveSection}

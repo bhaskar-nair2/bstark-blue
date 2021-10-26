@@ -13,5 +13,5 @@
 }
 
 .social-panel{
-  @apply flex justify-between;
+  @apply flex justify-between lg:justify-start lg:space-x-14;
 }

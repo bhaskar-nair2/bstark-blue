@@ -8,8 +8,8 @@ library.add(faGithub, faStackOverflow, faTwitter, faInstagram, faLinkedin);
 const links = [
   { icon: 'stack-overflow', link: 'https://stackoverflow.com/users/4347232/bhaskar' },
   { icon: 'github', link: 'https://github.com/bhaskar-nair2/' },
-  { icon: 'linkedin', link: 'https://www.linkedin.com/in/bhaskar-nair2/' },
   { icon: 'twitter', link: 'https://twitter.com/bas_kar_na_yar' },
+  { icon: 'linkedin', link: 'https://www.linkedin.com/in/bhaskar-nair2/' },
   { icon: 'instagram', link: 'https://www.instagram.com/bas_kar_na_yar/' },
 ]
 

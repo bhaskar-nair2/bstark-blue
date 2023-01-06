@@ -28,7 +28,8 @@ function Home() {
         <span className="text-primary">Bhaskar Nair</span>
       </h1>
       <p className="text-md lg:text-base lg:w-96 mb-12">
-        I am a <span className="text-primary">Frontend Architect</span> with experience in ECommerce and
+        I am a <span className="text-primary">Partner Technology Manager</span> at YouTube. 
+        Primarily I am a Frontend Developer with experience in industries like ECommerce and
         Transport. I like working with early stage startups to bring their
         ideas to life.
       </p>

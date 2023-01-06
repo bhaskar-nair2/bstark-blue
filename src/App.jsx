@@ -29,16 +29,16 @@ class App extends React.Component {
     // Full-page scroll code
     this.calculateSectionOffsets()
 
-    window.addEventListener("DOMMouseScroll", this.handleMouseWheel); // Mozilla Firefox
-    window.addEventListener("mousewheel", this.handleMouseWheel, {
-      passive: false
-    }); // Other browsers
+//     window.addEventListener("DOMMouseScroll", this.handleMouseWheel); // Mozilla Firefox
+//     window.addEventListener("mousewheel", this.handleMouseWheel, {
+//       passive: false
+//     }); // Other browsers
 
-    window.addEventListener("mousedown", this.clicked, { passive: false }); // mobile devices
-    window.addEventListener("touchstart", this.touchStart, { passive: false }); // mobile devices
-    window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
+//     window.addEventListener("mousedown", this.clicked, { passive: false }); // mobile devices
+//     window.addEventListener("touchstart", this.touchStart, { passive: false }); // mobile devices
+//     window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
 
-    window.scrollBy(0, 1);
+//     window.scrollBy(0, 1);
   }
 
   calculateSectionOffsets = async () => {

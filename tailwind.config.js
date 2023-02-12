@@ -7,6 +7,7 @@ module.exports = {
       text: '#EEEEEE',
       background: '#222831',
       accent: '#393E46',
+      danger: '#FF0000'
     },
     fontSize: {
       xs: ['12px', '12px'],

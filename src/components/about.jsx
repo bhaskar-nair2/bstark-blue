@@ -27,11 +27,15 @@ function Home() {
         Hi, I am<br />
         <span className="text-primary">Bhaskar Nair</span>
       </h1>
+      <p className="text-sm lg:text-md lg:w-96 mb-12">
+        <span className="text-accent">Partner Technology Manager @ </span>
+        <span className="text-danger">YouTube</span>
+      </p>
       <p className="text-md lg:text-base lg:w-96 mb-12">
-        I am a <span className="text-primary">Partner Technology Manager</span> at YouTube. 
-        Primarily I am a Frontend Developer with experience in industries like ECommerce and
-        Transport. I like working with early stage startups to bring their
-        ideas to life.
+        I manage the payments and reportings of YouTube's Largest Music Publishing
+        partners across APAC.
+        <br /><br />
+        My portfolio includes the likes of IPRS, TSeries, CASH, WAMI, etc.
       </p>
       <p className="text-md lg:text-base lg:w-96 mb-12">
         My primary stack is <br />

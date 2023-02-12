@@ -24,7 +24,7 @@ const icons = links.map((link, index) =>
 
 export function SocialsBar(props) {
   // is last section (footer)
-  const hideBar = props.activeSection == props.totalSections - 1
+  const hideBar = props.hideBar
 
   return (
     <ul className={`social-bar ${hideBar ? 'opacity-0' : ''}`}>

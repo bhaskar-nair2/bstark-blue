@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollTrigger from 'react-scroll-trigger';
 
 import Navigation from './components/navigation.jsx'
 import { SocialsBar } from './components/socials.jsx'
@@ -17,12 +18,13 @@ class App extends React.Component {
       inMove: false,
       activeSection: 0,
       offsets: [],
-      touchStartY: 0
+      touchStartY: 0,
+      hideBar: false
     };
 
-
-    // window.addEventListener("touchstart", this.touchStart, { passive: false }); // mobile devices
-    // window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
+    // mobile devices
+    window.addEventListener("touchstart", this.touchStart, { passive: false });
+    window.addEventListener("touchmove", this.touchMove, { passive: false });
   }
 
   componentDidMount() {
@@ -30,9 +32,9 @@ class App extends React.Component {
     this.calculateSectionOffsets()
 
     //     window.addEventListener("DOMMouseScroll", this.handleMouseWheel); // Mozilla Firefox
-    //     window.addEventListener("mousewheel", this.handleMouseWheel, {
-    //       passive: false
-    //     }); // Other browsers
+    // window.addEventListener("mousewheel", this.handleMouseWheel, {
+    //   passive: false
+    // }); // Other browsers
 
     //     window.addEventListener("mousedown", this.clicked, { passive: false }); // mobile devices
     //     window.addEventListener("touchstart", this.touchStart, { passive: false }); // mobile devices
@@ -133,6 +135,14 @@ class App extends React.Component {
     this.setState({ activeSection: validIndex })
   }
 
+  onEnterViewport = () => {
+    this.setState({ hideBar: true })
+  }
+
+  onExitViewport = () => {
+    this.setState({ hideBar: false })
+  }
+
   render() {
     return (
       <div className="App" >
@@ -141,13 +151,16 @@ class App extends React.Component {
           setActiveSection={this.setActiveSection}
         />
         <SocialsBar
+          hideBar={this.state.hideBar}
           totalSections={this.state.offsets.length}
           activeSection={this.state.activeSection}
         />
         <About></About>
         <Websites></Websites>
         <Articles></Articles>
-        <Footer></Footer>
+        <ScrollTrigger onEnter={this.onEnterViewport} onExit={this.onExitViewport}>
+          <Footer></Footer>
+        </ScrollTrigger>
       </div>
     )
   }

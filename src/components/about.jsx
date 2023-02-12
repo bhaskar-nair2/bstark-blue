@@ -25,7 +25,9 @@ function Home() {
       </div>
       <h1 className="text-xl xs:text-2xl lg:text-2xl mb-12">
         Hi, I am<br />
-        <span className="text-primary">Bhaskar Nair</span>
+        <span className="text-primary">
+          <a target="_blank" href="https://www.linkedin.com/in/bhaskar-nair2">Bhaskar Nair</a>
+        </span>
       </h1>
       <p className="text-sm lg:text-md lg:w-96 mb-12">
         <span className="text-accent">Partner Technology Manager @ </span>

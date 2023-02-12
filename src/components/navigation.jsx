@@ -1,7 +1,6 @@
 import './navigation.css'
 
 function Navigation(props) {
-
   const links = [
     { text: 'about', link: '#about-section' },
     { text: 'projects', link: '#websites-section' },
@@ -12,7 +11,7 @@ function Navigation(props) {
     <a
       key={index}
       onClick={() => props.setActiveSection(index)}
-      className={`nav-link ${props.activeSection != index ? 'no-underline' : ''}`}
+      className={`nav-link no-underline ${props.activeSection != index ? 'no-underline' : ''}`}
       href={link.link}>
       {link.text}
     </a>
